@@ -1,0 +1,57 @@
+[DatabaseGenerated(System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOpt
+ion.Identity)]
+public int AutoId { get; set; }
+
+[StringLength(20, MinimumLength = 4, ErrorMessage = "Must be at least 4
+characters long.")]
+[Display(Name = "First Name")]
+        public string FirstName { get; set; }
+
+[Required(ErrorMessage = "Please write your LastName")]
+[Display(Name = "Last Name")]
+public string LastName { get; set; }
+
+public int Age { get; set; }
+
+[Display(Name = "Is Active?")]
+public bool Active { get; set; }
+    }
+}
+
+$(document).ready(function()
+{
+    var fname = document.getElementById('fname').val();
+    var lname = document.getElementById('lname').val();
+    var age = document.getElementById('age').val();
+ /*Do not know how to get element by class and that too, two different type. Have to check if user chose anything or not*/
+
+  $("#submit").click(function()
+  {
+        if (fname.length === 0)
+        {
+            alert("Please input a first name");
+        }
+        else if (lname.length === 0)
+        {
+            alert("Please input a last name");
+        }
+        else if (age.length === 0)
+        {
+            alert("Please input an age");
+        }
+    });
+});With aCmd
+.ActiveConnection = aCon
+.CommandType = adCmdStoredProc
+.CommandText = "[SPROC]"
+.Parameters.Append.CreateParameter("@in_EmployeeID", adInteger, adParamInput)...
+$this->validate($request, [
+            'name' => 'required|max:255',
+            'email' => 'required|confirmed|email|unique:users',
+        ]);
+
+        // Store data
+        $user = New User;
+        $user->name         = $request->name;
+        $user->email        = $request->email;
+        $user->save();
