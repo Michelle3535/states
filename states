@@ -1,0 +1,287 @@
+(1 rows affected)
+1> StateID       INT IDENTITY (1, 1),
+2>    StateName     VARCHAR (32),
+3>    StateAbbrev   CHAR (2),
+4>
+5> )
+6> INSERT INTO StateLookup
+7> VALUES ('Alabama', 'AL'),
+8>        ('Alaska', 'AK'),
+9>        ('Arizona', 'AZ'),
+10>        ('Arkansas', 'AR'),
+11>        ('California', 'CA'),
+12>        ('Colorado', 'CO'),
+13>        ('Connecticut', 'CT'),
+14>        ('Delaware', 'DE'),
+15>        ('District of Columbia', 'DC'),
+16>        ('Florida', 'FL'),
+17>        ('Georgia', 'GA'),
+18>        ('Hawaii', 'HI'),
+19>        ('Idaho', 'ID'),
+20>        ('Illinois', 'IL'),
+21>        ('Indiana', 'IN'),
+22>        ('Iowa', 'IA'),
+23>        ('Kansas', 'KS'),
+24>        ('Kentucky', 'KY'),
+25>        ('Louisiana', 'LA'),
+26>        ('Maine', 'ME'),
+27>        ('Maryland', 'MD'),
+28>        ('Massachusetts', 'MA'),
+29>        ('Michigan', 'MI'),
+30>        ('Minnesota', 'MN'),
+31>        ('Mississippi', 'MS'),
+32>        ('Missouri', 'MO'),
+33>        ('Montana', 'MT'),
+34>        ('Nebraska', 'NE'),
+35>        ('Nevada', 'NV'),
+36>        ('New Hampshire', 'NH'),
+37>        ('New Jersey', 'NJ'),
+38>        ('New Mexico', 'NM'),
+39>        ('New York', 'NY'),
+40>        ('North Carolina', 'NC'),
+41>        ('North Dakota', 'ND'),
+42>        ('Ohio', 'OH'),
+43>        ('Oklahoma', 'OK'),
+44>        ('Oregon', 'OR'),
+45>        ('Pennsylvania', 'PA'),
+46>        ('Rhode Island', 'RI'),
+47>        ('South Carolina', 'SC'),
+48>        ('South Dakota', 'SD'),
+49>        ('Tennessee', 'TN'),
+50>        ('Texas', 'TX'),
+51>        ('Utah', 'UT'),
+52>        ('Vermont', 'VT'),
+53>        ('Virginia', 'VA'),
+54>        ('Washington', 'WA'),
+55>        ('West Virginia', 'WV'),
+56>        ('Wisconsin', 'WI'),
+57>        ('Wyoming', 'WY')$this->validate($request, [
+58~             'name' => 'required|max:255',
+59~             'email' => 'required|confirmed|email|unique:users',
+60~         ]);
+61>
+62>         // Store data
+63>         $user = New User;
+64>         $user->name         = $request->name;
+65>         $user->email        = $request->email;
+66>         $user->save();
+67> $this->validate($request, [
+68~             'name' => 'required|max:255',
+69~             'email' => 'required|confirmed|email|unique:users',
+70~         ]);
+71>
+72>         // Store data
+73>         $user = New User;
+74>         $user->name         = $request->name;
+75>         $user->email        = $request->email;
+76>         $user->save();
+77> $this->validate($request, [
+78~             'name' => 'required|max:255',
+79~             'email' => 'required|confirmed|email|unique:users',
+80~         ]);
+81>
+82>         // Store data
+83>         $user = New User;
+84>         $user->name         = $request->name;
+85>         $user->email        = $request->email;
+86>         $user->save();
+87> $this->validate($request, [
+88~             'name' => 'required|max:255',
+89~             'email' => 'required|confirmed|email|unique:users',
+90~         ]);
+91>
+92>         // Store data
+93>         $user = New User;
+94>         $user->name         = $request->name;
+95>         $user->email        = $request->email;
+96>         $user->save();
+97> --
+98> -- run below commmand from command prompt
+99> -- sqlcmd -S LAPTOP-NER7657L\SQLEXPRESS01 -E
+100> --
+101>
+102> select @@Version
+103> go
+Msg 156, Level 15, State 1, Server LAPTOP-NER7657L\SQLEXPRESS01, Line 1
+Incorrect syntax near the keyword 'IDENTITY'.
+Msg 102, Level 15, State 1, Server LAPTOP-NER7657L\SQLEXPRESS01, Line 57
+Incorrect syntax near '$this'.
+1>                                                                                                                      
+2> ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+3> Microsoft SQL Server 2017 (RTM) - 14.0.1000.169 (X64)
+4>         Aug 22 2017 17:04:49
+5>         Copyright (C) 2017 Microsoft Corporation
+6>         Express Edition (64-bit) on Windows 10 Home 10.0 <X64> (Build 17134: )
+7>
+8>
+9> (1 rows affected)
+10> 1> StateID       INT IDENTITY (1, 1),
+11> 2>    StateName     VARCHAR (32),
+12> 3>    StateAbbrev   CHAR (2),
+13> 4>
+14> 5> )
+15> 6> INSERT INTO StateLookup
+16> 7> VALUES ('Alabama', 'AL'),
+17> 8>        ('Alaska', 'AK'),
+18> 9>        ('Arizona', 'AZ'),
+19> 10>        ('Arkansas', 'AR'),
+20> 11>        ('California', 'CA'),
+21> 12>        ('Colorado', 'CO'),
+22> 13>        ('Connecticut', 'CT'),
+23> 14>        ('Delaware', 'DE'),
+24> 15>        ('District of Columbia', 'DC'),
+25> 16>        ('Florida', 'FL'),
+26> 17>        ('Georgia', 'GA'),
+27> 18>        ('Hawaii', 'HI'),
+28> 19>        ('Idaho', 'ID'),
+29> 20>        ('Illinois', 'IL'),
+30> 21>        ('Indiana', 'IN'),
+31> 22>        ('Iowa', 'IA'),
+32> 23>        ('Kansas', 'KS'),
+33> 24>        ('Kentucky', 'KY'),
+34> 25>        ('Louisiana', 'LA'),
+35> 26>        ('Maine', 'ME'),
+36> 27>        ('Maryland', 'MD'),
+37> 28>        ('Massachusetts', 'MA'),
+38> 29>        ('Michigan', 'MI'),
+39> 30>        ('Minnesota', 'MN'),
+40> 31>        ('Mississippi', 'MS'),
+41> 32>        ('Missouri', 'MO'),
+42> 33>        ('Montana', 'MT'),
+43> 34>        ('Nebraska', 'NE'),
+44> 35>        ('Nevada', 'NV'),
+45> 36>        ('New Hampshire', 'NH'),
+46> 37>        ('New Jersey', 'NJ'),
+47> 38>        ('New Mexico', 'NM'),
+48> 39>        ('New York', 'NY'),
+49> 40>        ('North Carolina', 'NC'),
+50> 41>        ('North Dakota', 'ND'),
+51> 42>        ('Ohio', 'OH'),
+52> 43>        ('Oklahoma', 'OK'),
+53> 44>        ('Oregon', 'OR'),
+54> 45>        ('Pennsylvania', 'PA'),
+55> 46>        ('Rhode Island', 'RI'),
+56> 47>        ('South Carolina', 'SC'),
+57> 48>        ('South Dakota', 'SD'),
+58> 49>        ('Tennessee', 'TN'),
+59> 50>        ('Texas', 'TX'),
+60> 51>        ('Utah', 'UT'),
+61> 52>        ('Vermont', 'VT'),
+62> 53>        ('Virginia', 'VA'),
+63> 54>        ('Washington', 'WA'),
+64> 55>        ('West Virginia', 'WV'),
+65> 56>        ('Wisconsin', 'WI'),
+66> 57>        ('Wyoming', 'WY')$this->validate($request, [
+67~ 58~             'name' => 'required|max:255',
+68~ 59~             'email' => 'required|confirmed|email|unique:users',
+69~ 60~         ]);
+70> 61>
+71> 62>         // Store data
+72> 63>         $user = New User;
+73> 64>         $user->name         = $request->name;
+74> 65>         $user->email        = $request->email;
+75> 66>         $user->save();
+76> 67> $this->validate($request, [
+77~ 68~             'name' => 'required|max:255',
+78~ 69~             'email' => 'required|confirmed|email|unique:users',
+79~ 70~         ]);
+80> 71>
+81> 72>         // Store data
+82> 73>         $user = New User;
+83> 74>         $user->name         = $request->name;
+84> 75>         $user->email        = $request->email;
+85> 76>         $user->save();
+86> 77> $this->validate($request, [
+87~ 78~             'name' => 'required|max:255',
+88~ 79~             'email' => 'required|confirmed|email|unique:users',
+89~ 80~         ]);
+90> 81>
+91> 82>         // Store data
+92> 83>         $user = New User;
+93> 84>         $user->name         = $request->name;
+94> 85>         $user->email        = $request->email;
+95> 86>         $user->save();
+96> 87> $this->validate($request, [
+97~ 88~             'name' => 'required|max:255',
+98~ 89~             'email' => 'required|confirmed|email|unique:users',
+99~ 90~         ]);
+100> 91>
+101> 92>         // Store data
+102> 93>         $user = New User;
+103> 94>         $user->name         = $request->name;
+104> 95>         $user->email        = $request->email;
+105> 96>         $user->save();
+106> 97>
+107>
+108>(1 rows affected)
+1> person_id (INT, PRIMARY KEY, AUTO GENERATED SEQ)
+2> first_name (VARCHAR(50))
+3> last_name (VARCHAR(50))
+4> state_id (INT, FOREIGN KEY states table)
+5> gender (CHAR(1))
+6> dob (DATETIME)
+7>
+8>
+9> PersonID (1) LastName (Hansen)  FirstName (Ola) Age (30)
+10> PersonID (2) LastName (Svendson) FirstName (Tove) Age (23)
+11> PersonID (3) LastName (Petterson) FirstName (Kari) Age (20)
+
+
+(1 rows affected)
+1> SELECT FirstName, LastName, Department
+2> FROM HumanResources.vEmployeeDepartmentHistory
+3> WHERE FirstName = @FirstName AND LastName = @LastName
+4>     AND EndDate IS NULL;
+
+
+109>
+110>
+111>
+112>
+113>
+114>
+115>
+116>
+117>
+118>
+119>
+120>
+121>
+122>
+123>
+124>
+125>
+126>
+127>
+128>
+129>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
